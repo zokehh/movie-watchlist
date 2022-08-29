@@ -20,7 +20,7 @@ async function getFilms(event) {
     }
     
     for (let test of allFilms) {
-        const res = await fetch(`http://www.omdbapi.com/?apikey=f13b85fc&i=${test}`)
+        const res = await fetch(`https://www.omdbapi.com/?apikey=f13b85fc&i=${test}`)
         const data = await res.json()
             film.push(data)
             console.log(film)        
