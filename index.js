@@ -35,9 +35,9 @@ async function getFilms(event) {
 
 
 function renderFilm(film) {
-    let html = ""
+    let html1 = ""
     for (let i = 0; i < film.length; i++) {
-        html += `
+        html1 += `
         <div class="film-container">
             <img class="film-img" src="${film[i].Poster}">
             <div class="second-child">
@@ -49,6 +49,6 @@ function renderFilm(film) {
         </div>
         `
         }
-    document.getElementById("main").innerHTML = html
+    document.getElementById("main").innerHTML = html1
     html = ""
 }
